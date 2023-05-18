@@ -25,13 +25,13 @@ class Paypal extends AbstractService
      * @see https://developer.paypal.com/webapps/developer/docs/integration/direct/log-in-with-paypal/detailed/
      * @see  #attributes
      */
-    const SCOPE_OPENID = 'openid';
-    const SCOPE_PROFILE = 'profile';
-    const SCOPE_PAYPALATTRIBUTES = 'https://uri.paypal.com/services/paypalattributes';
-    const SCOPE_EMAIL = 'email';
-    const SCOPE_ADDRESS = 'address';
-    const SCOPE_PHONE = 'phone';
-    const SCOPE_EXPRESSCHECKOUT = 'https://uri.paypal.com/services/expresscheckout';
+    public const SCOPE_OPENID = 'openid';
+    public const SCOPE_PROFILE = 'profile';
+    public const SCOPE_PAYPALATTRIBUTES = 'https://uri.paypal.com/services/paypalattributes';
+    public const SCOPE_EMAIL = 'email';
+    public const SCOPE_ADDRESS = 'address';
+    public const SCOPE_PHONE = 'phone';
+    public const SCOPE_EXPRESSCHECKOUT = 'https://uri.paypal.com/services/expresscheckout';
 
     public function __construct(
         CredentialsInterface $credentials,

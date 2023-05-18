@@ -35,11 +35,11 @@ class Netatmo extends AbstractService
      */
 
     // Used to read weather station's data (devicelist, getmeasure)
-    const SCOPE_STATION_READ = 'read_station';
+    public const SCOPE_STATION_READ = 'read_station';
     // Used to read thermostat's data (devicelist, getmeasure, getthermstate)
-    const SCOPE_THERMOSTAT_READ = 'read_thermostat';
+    public const SCOPE_THERMOSTAT_READ = 'read_thermostat';
     // Used to configure the thermostat (syncschedule, setthermpoint)
-    const SCOPE_THERMOSTAT_WRITE = 'write_thermostat';
+    public const SCOPE_THERMOSTAT_WRITE = 'write_thermostat';
 
     public function __construct(
         CredentialsInterface $credentials,

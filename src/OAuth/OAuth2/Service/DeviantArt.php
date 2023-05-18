@@ -15,7 +15,7 @@ class DeviantArt extends AbstractService
     /**
      * DeviantArt www url - used to build dialog urls.
      */
-    const WWW_URL = 'https://www.deviantart.com/';
+    public const WWW_URL = 'https://www.deviantart.com/';
 
     /**
      * Defined scopes.
@@ -25,12 +25,12 @@ class DeviantArt extends AbstractService
      * @see https://www.deviantart.com/developers/authentication
      * @see https://www.deviantart.com/developers/http/v1/20150217
      */
-    const SCOPE_FEED = 'feed';
-    const SCOPE_BROWSE = 'browse';
-    const SCOPE_COMMENT = 'comment.post';
-    const SCOPE_STASH = 'stash';
-    const SCOPE_USER = 'user';
-    const SCOPE_USERMANAGE = 'user.manage';
+    public const SCOPE_FEED = 'feed';
+    public const SCOPE_BROWSE = 'browse';
+    public const SCOPE_COMMENT = 'comment.post';
+    public const SCOPE_STASH = 'stash';
+    public const SCOPE_USER = 'user';
+    public const SCOPE_USERMANAGE = 'user.manage';
 
     public function __construct(
         CredentialsInterface $credentials,

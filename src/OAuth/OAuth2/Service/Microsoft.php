@@ -12,30 +12,30 @@ use OAuth\OAuth2\Token\StdOAuth2Token;
 
 class Microsoft extends AbstractService
 {
-    const SCOPE_BASIC = 'wl.basic';
-    const SCOPE_OFFLINE = 'wl.offline_access';
-    const SCOPE_SIGNIN = 'wl.signin';
-    const SCOPE_BIRTHDAY = 'wl.birthday';
-    const SCOPE_CALENDARS = 'wl.calendars';
-    const SCOPE_CALENDARS_UPDATE = 'wl.calendars_update';
-    const SCOPE_CONTACTS_BIRTHDAY = 'wl.contacts_birthday';
-    const SCOPE_CONTACTS_CREATE = 'wl.contacts_create';
-    const SCOPE_CONTACTS_CALENDARS = 'wl.contacts_calendars';
-    const SCOPE_CONTACTS_PHOTOS = 'wl.contacts_photos';
-    const SCOPE_CONTACTS_SKYDRIVE = 'wl.contacts_skydrive';
-    const SCOPE_EMAILS = 'wl.emails';
-    const SCOPE_EVENTS_CREATE = 'wl.events_create';
-    const SCOPE_MESSENGER = 'wl.messenger';
-    const SCOPE_PHONE_NUMBERS = 'wl.phone_numbers';
-    const SCOPE_PHOTOS = 'wl.photos';
-    const SCOPE_POSTAL_ADDRESSES = 'wl.postal_addresses';
-    const SCOPE_SHARE = 'wl.share';
-    const SCOPE_SKYDRIVE = 'wl.skydrive';
-    const SCOPE_SKYDRIVE_UPDATE = 'wl.skydrive_update';
-    const SCOPE_WORK_PROFILE = 'wl.work_profile';
-    const SCOPE_APPLICATIONS = 'wl.applications';
-    const SCOPE_APPLICATIONS_CREATE = 'wl.applications_create';
-    const SCOPE_IMAP = 'wl.imap';
+    public const SCOPE_BASIC = 'wl.basic';
+    public const SCOPE_OFFLINE = 'wl.offline_access';
+    public const SCOPE_SIGNIN = 'wl.signin';
+    public const SCOPE_BIRTHDAY = 'wl.birthday';
+    public const SCOPE_CALENDARS = 'wl.calendars';
+    public const SCOPE_CALENDARS_UPDATE = 'wl.calendars_update';
+    public const SCOPE_CONTACTS_BIRTHDAY = 'wl.contacts_birthday';
+    public const SCOPE_CONTACTS_CREATE = 'wl.contacts_create';
+    public const SCOPE_CONTACTS_CALENDARS = 'wl.contacts_calendars';
+    public const SCOPE_CONTACTS_PHOTOS = 'wl.contacts_photos';
+    public const SCOPE_CONTACTS_SKYDRIVE = 'wl.contacts_skydrive';
+    public const SCOPE_EMAILS = 'wl.emails';
+    public const SCOPE_EVENTS_CREATE = 'wl.events_create';
+    public const SCOPE_MESSENGER = 'wl.messenger';
+    public const SCOPE_PHONE_NUMBERS = 'wl.phone_numbers';
+    public const SCOPE_PHOTOS = 'wl.photos';
+    public const SCOPE_POSTAL_ADDRESSES = 'wl.postal_addresses';
+    public const SCOPE_SHARE = 'wl.share';
+    public const SCOPE_SKYDRIVE = 'wl.skydrive';
+    public const SCOPE_SKYDRIVE_UPDATE = 'wl.skydrive_update';
+    public const SCOPE_WORK_PROFILE = 'wl.work_profile';
+    public const SCOPE_APPLICATIONS = 'wl.applications';
+    public const SCOPE_APPLICATIONS_CREATE = 'wl.applications_create';
+    public const SCOPE_IMAP = 'wl.imap';
 
     /**
      * MS uses some magical not officialy supported scope to get even moar info like full emailaddresses.
@@ -48,7 +48,7 @@ class Microsoft extends AbstractService
      *
      * Considering this scope is not officially supported: use with care
      */
-    const SCOPE_CONTACTS_EMAILS = 'wl.contacts_emails';
+    public const SCOPE_CONTACTS_EMAILS = 'wl.contacts_emails';
 
     public function __construct(
         CredentialsInterface $credentials,

@@ -17,8 +17,8 @@ class Ustream extends AbstractService
      *
      * @var string
      */
-    const SCOPE_OFFLINE = 'offline';
-    const SCOPE_BROADCASTER = 'broadcaster';
+    public const SCOPE_OFFLINE = 'offline';
+    public const SCOPE_BROADCASTER = 'broadcaster';
 
     public function __construct(
         CredentialsInterface $credentials,

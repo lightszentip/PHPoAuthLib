@@ -14,8 +14,8 @@ use OAuth\OAuth1\Token\StdOAuth1Token;
 
 class Twitter extends AbstractService
 {
-    const ENDPOINT_AUTHENTICATE = 'https://api.twitter.com/oauth/authenticate';
-    const ENDPOINT_AUTHORIZE = 'https://api.twitter.com/oauth/authorize';
+    public const ENDPOINT_AUTHENTICATE = 'https://api.twitter.com/oauth/authenticate';
+    public const ENDPOINT_AUTHORIZE = 'https://api.twitter.com/oauth/authorize';
 
     protected $authorizationEndpoint = self::ENDPOINT_AUTHENTICATE;
 

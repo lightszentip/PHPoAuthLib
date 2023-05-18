@@ -303,9 +303,6 @@ class Uri implements UriInterface
         return $uri;
     }
 
-    /**
-     * @param $path
-     */
     public function setPath($path): void
     {
         if (empty($path)) {

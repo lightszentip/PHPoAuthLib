@@ -17,27 +17,27 @@ class Vkontakte extends AbstractService
      *
      * @see http://vk.com/dev/permissions
      */
-    const SCOPE_EMAIL = 'email';
-    const SCOPE_NOTIFY = 'notify';
-    const SCOPE_FRIENDS = 'friends';
-    const SCOPE_PHOTOS = 'photos';
-    const SCOPE_AUDIO = 'audio';
-    const SCOPE_VIDEO = 'video';
-    const SCOPE_DOCS = 'docs';
-    const SCOPE_NOTES = 'notes';
-    const SCOPE_PAGES = 'pages';
-    const SCOPE_APP_LINK = '';
-    const SCOPE_STATUS = 'status';
-    const SCOPE_OFFERS = 'offers';
-    const SCOPE_QUESTIONS = 'questions';
-    const SCOPE_WALL = 'wall';
-    const SCOPE_GROUPS = 'groups';
-    const SCOPE_MESSAGES = 'messages';
-    const SCOPE_NOTIFICATIONS = 'notifications';
-    const SCOPE_STATS = 'stats';
-    const SCOPE_ADS = 'ads';
-    const SCOPE_OFFLINE = 'offline';
-    const SCOPE_NOHTTPS = 'nohttps';
+    public const SCOPE_EMAIL = 'email';
+    public const SCOPE_NOTIFY = 'notify';
+    public const SCOPE_FRIENDS = 'friends';
+    public const SCOPE_PHOTOS = 'photos';
+    public const SCOPE_AUDIO = 'audio';
+    public const SCOPE_VIDEO = 'video';
+    public const SCOPE_DOCS = 'docs';
+    public const SCOPE_NOTES = 'notes';
+    public const SCOPE_PAGES = 'pages';
+    public const SCOPE_APP_LINK = '';
+    public const SCOPE_STATUS = 'status';
+    public const SCOPE_OFFERS = 'offers';
+    public const SCOPE_QUESTIONS = 'questions';
+    public const SCOPE_WALL = 'wall';
+    public const SCOPE_GROUPS = 'groups';
+    public const SCOPE_MESSAGES = 'messages';
+    public const SCOPE_NOTIFICATIONS = 'notifications';
+    public const SCOPE_STATS = 'stats';
+    public const SCOPE_ADS = 'ads';
+    public const SCOPE_OFFLINE = 'offline';
+    public const SCOPE_NOHTTPS = 'nohttps';
 
     public function __construct(
         CredentialsInterface $credentials,

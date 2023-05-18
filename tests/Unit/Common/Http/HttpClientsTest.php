@@ -45,6 +45,10 @@ class HttpClientsTest extends TestCase
      */
     public function testHeaders(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $testUri = new Uri('http://httpbin.org/get');
 
         $me = $this;
@@ -74,6 +78,10 @@ class HttpClientsTest extends TestCase
      */
     public function testDelete(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $testUri = new Uri('http://httpbin.org/delete');
 
         $me = $this;
@@ -90,6 +98,9 @@ class HttpClientsTest extends TestCase
      */
     public function testPut(): void
     {
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $testUri = new Uri('http://httpbin.org/put');
 
         $me = $this;
@@ -107,6 +118,10 @@ class HttpClientsTest extends TestCase
      */
     public function testPost(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         // http test server
         $testUri = new Uri('http://httpbin.org/post');
 
@@ -140,6 +155,10 @@ class HttpClientsTest extends TestCase
      */
     public function testGet(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         // test uri
         $testUri = new Uri('http://httpbin.org/get?testKey=testValue');
 

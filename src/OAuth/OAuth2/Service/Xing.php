@@ -65,12 +65,13 @@ class Xing extends AbstractService
         if (null === $data || !is_array($data)) {
             throw new TokenResponseException('Unable to parse response.');
         } elseif (isset($data['error'])) {
-            throw new TokenResponseException(sprintf(
-                    'Error in retrieving access token, error: "%s", description: "%s", uri: "%s".',
-                    $data['error'],
-                    $data['error_description'],
-                    $data['error_uri']
-                )
+            throw new TokenResponseException(
+                sprintf(
+                'Error in retrieving access token, error: "%s", description: "%s", uri: "%s".',
+                $data['error'],
+                $data['error_description'],
+                $data['error_uri']
+            )
             );
         }
 

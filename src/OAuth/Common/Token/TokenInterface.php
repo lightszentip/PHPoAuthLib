@@ -10,12 +10,12 @@ interface TokenInterface
     /**
      * Denotes an unknown end of life time.
      */
-    const EOL_UNKNOWN = -9001;
+    public const EOL_UNKNOWN = -9001;
 
     /**
      * Denotes a token which never expires, should only happen in OAuth1.
      */
-    const EOL_NEVER_EXPIRES = -9002;
+    public const EOL_NEVER_EXPIRES = -9002;
 
     /**
      * @return string

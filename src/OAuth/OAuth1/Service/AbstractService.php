@@ -15,7 +15,7 @@ use OAuth\OAuth1\Token\TokenInterface;
 abstract class AbstractService extends BaseAbstractService implements ServiceInterface
 {
     /** @const OAUTH_VERSION */
-    const OAUTH_VERSION = 1;
+    public const OAUTH_VERSION = 1;
 
     /** @var SignatureInterface */
     protected $signature;
@@ -292,8 +292,6 @@ abstract class AbstractService extends BaseAbstractService implements ServiceInt
      * This is only needed to verify the `oauth_callback_confirmed` parameter. The actual
      * parsing logic is contained in the access token parser.
      *
-     * @abstract
-     *
      * @param string $responseBody
      *
      * @return TokenInterface
@@ -302,8 +300,6 @@ abstract class AbstractService extends BaseAbstractService implements ServiceInt
 
     /**
      * Parses the access token response and returns a TokenInterface.
-     *
-     * @abstract
      *
      * @param string $responseBody
      *

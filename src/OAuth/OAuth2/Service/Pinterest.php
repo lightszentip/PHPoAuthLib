@@ -32,10 +32,10 @@ class Pinterest extends AbstractService
      * Defined scopes - More scopes are listed here:
      * https://developers.pinterest.com/docs/api/overview/.
      */
-    const SCOPE_READ_PUBLIC = 'read_public';            // read a user’s Pins, boards and likes
-    const SCOPE_WRITE_PUBLIC = 'write_public';           // write Pins, boards, likes
-    const SCOPE_READ_RELATIONSHIPS = 'read_relationships';     // read a user’s follows (boards, users, interests)
-    const SCOPE_WRITE_RELATIONSHIPS = 'write_relationships';    // follow boards, users and interests
+    public const SCOPE_READ_PUBLIC = 'read_public';            // read a user’s Pins, boards and likes
+    public const SCOPE_WRITE_PUBLIC = 'write_public';           // write Pins, boards, likes
+    public const SCOPE_READ_RELATIONSHIPS = 'read_relationships';     // read a user’s follows (boards, users, interests)
+    public const SCOPE_WRITE_RELATIONSHIPS = 'write_relationships';    // follow boards, users and interests
 
     public function __construct(
         CredentialsInterface $credentials,

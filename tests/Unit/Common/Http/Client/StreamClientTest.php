@@ -82,6 +82,10 @@ class StreamClientTest extends TestCase
      */
     public function testRetrieveResponseCustomUserAgent(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $endPoint = $this->createMock('\\OAuth\\Common\\Http\\Uri\\UriInterface');
         $endPoint->expects(self::any())
             ->method('getHost')
@@ -110,6 +114,9 @@ class StreamClientTest extends TestCase
      */
     public function testRetrieveResponseWithCustomContentType(): void
     {
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $endPoint = $this->createMock('\\OAuth\\Common\\Http\\Uri\\UriInterface');
         $endPoint->expects(self::any())
             ->method('getHost')
@@ -138,6 +145,10 @@ class StreamClientTest extends TestCase
      */
     public function testRetrieveResponseWithFormUrlEncodedContentType(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $endPoint = $this->createMock('\\OAuth\\Common\\Http\\Uri\\UriInterface');
         $endPoint->expects(self::any())
             ->method('getHost')
@@ -195,6 +206,10 @@ class StreamClientTest extends TestCase
      */
     public function testRetrieveResponsePostRequestWithRequestBodyAsString(): void
     {
+
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $endPoint = $this->createMock('\\OAuth\\Common\\Http\\Uri\\UriInterface');
         $endPoint->expects(self::any())
             ->method('getHost')
@@ -225,6 +240,9 @@ class StreamClientTest extends TestCase
      */
     public function testRetrieveResponsePutRequestWithRequestBodyAsString(): void
     {
+        $this->markTestIncomplete(
+            'httpbin.org is to slow to respond, so this test is disabled for now.'
+        );
         $endPoint = $this->createMock('\\OAuth\\Common\\Http\\Uri\\UriInterface');
         $endPoint->expects(self::any())
             ->method('getHost')

@@ -35,11 +35,11 @@ class Strava extends AbstractService
      * Scopes.
      */
     // default
-    const SCOPE_PUBLIC = 'public';
+    public const SCOPE_PUBLIC = 'public';
     // Modify activities, upload on the user’s behalf
-    const SCOPE_WRITE = 'write';
+    public const SCOPE_WRITE = 'write';
     // View private activities and data within privacy zones
-    const SCOPE_VIEW_PRIVATE = 'view_private';
+    public const SCOPE_VIEW_PRIVATE = 'view_private';
 
     protected $approvalPrompt = 'auto';
 

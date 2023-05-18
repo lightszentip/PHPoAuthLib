@@ -24,12 +24,12 @@ class Heroku extends AbstractService
      *
      * @see https://devcenter.heroku.com/articles/oauth#scopes
      */
-    const SCOPE_GLOBAL = 'global';
-    const SCOPE_IDENTITY = 'identity';
-    const SCOPE_READ = 'read';
-    const SCOPE_WRITE = 'write';
-    const SCOPE_READ_PROTECTED = 'read-protected';
-    const SCOPE_WRITE_PROTECTED = 'write-protected';
+    public const SCOPE_GLOBAL = 'global';
+    public const SCOPE_IDENTITY = 'identity';
+    public const SCOPE_READ = 'read';
+    public const SCOPE_WRITE = 'write';
+    public const SCOPE_READ_PROTECTED = 'read-protected';
+    public const SCOPE_WRITE_PROTECTED = 'write-protected';
 
     /**
      * {@inheritdoc}

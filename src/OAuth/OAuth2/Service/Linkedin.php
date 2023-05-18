@@ -24,16 +24,16 @@ class Linkedin extends AbstractService
      *
      * @see https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/context
      */
-    const SCOPE_R_LITEPROFILE = 'r_liteprofile';
-    const SCOPE_R_FULLPROFILE = 'r_fullprofile';
-    const SCOPE_R_EMAILADDRESS = 'r_emailaddress';
-    const SCOPE_R_NETWORK = 'r_network';
-    const SCOPE_R_CONTACTINFO = 'r_contactinfo';
-    const SCOPE_RW_NUS = 'rw_nus';
-    const SCOPE_RW_COMPANY_ADMIN = 'rw_company_admin';
-    const SCOPE_RW_GROUPS = 'rw_groups';
-    const SCOPE_W_MESSAGES = 'w_messages';
-    const SCOPE_W_MEMBER_SOCIAL = 'w_member_social';
+    public const SCOPE_R_LITEPROFILE = 'r_liteprofile';
+    public const SCOPE_R_FULLPROFILE = 'r_fullprofile';
+    public const SCOPE_R_EMAILADDRESS = 'r_emailaddress';
+    public const SCOPE_R_NETWORK = 'r_network';
+    public const SCOPE_R_CONTACTINFO = 'r_contactinfo';
+    public const SCOPE_RW_NUS = 'rw_nus';
+    public const SCOPE_RW_COMPANY_ADMIN = 'rw_company_admin';
+    public const SCOPE_RW_GROUPS = 'rw_groups';
+    public const SCOPE_W_MESSAGES = 'w_messages';
+    public const SCOPE_W_MEMBER_SOCIAL = 'w_member_social';
 
     public function __construct(
         CredentialsInterface $credentials,

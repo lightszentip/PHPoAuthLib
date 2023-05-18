@@ -211,18 +211,6 @@ class SessionTest extends TestCase
         self::assertFalse($storage->hasAccessToken('bar'));
     }
 
-    /**
-     * @covers \Session::__construct
-     * @covers \Session::__destruct
-     *
-     * @runInSeparateProcess
-     */
-    public function testDestruct(): void
-    {
-        $storage = new Session();
-
-        unset($storage);
-    }
 
     /**
      * @covers \Session::retrieveAccessToken

@@ -12,8 +12,8 @@ use OAuth\OAuth2\Token\StdOAuth2Token;
 
 class Stripe extends AbstractService
 {
-    const SCOPE_READONLY = 'read_only';
-    const SCOPE_READWRITE = 'read_write';
+    public const SCOPE_READONLY = 'read_only';
+    public const SCOPE_READWRITE = 'read_write';
 
     public function __construct(
         CredentialsInterface $credentials,

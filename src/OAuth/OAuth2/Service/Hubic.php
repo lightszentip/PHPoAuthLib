@@ -29,16 +29,16 @@ use OAuth\OAuth2\Token\StdOAuth2Token;
 class Hubic extends AbstractService
 {
     // Scopes
-    const SCOPE_USAGE_GET = 'usage.r';
-    const SCOPE_ACCOUNT_GET = 'account.r';
-    const SCOPE_GETALLLINKS_GET = 'getAllLinks.r';
-    const SCOPE_CREDENTIALS_GET = 'credentials.r';
-    const SCOPE_SPONSORCODE_GET = 'sponsorCode.r';
-    const SCOPE_ACTIVATE_POST = 'activate.w';
-    const SCOPE_SPONSORED_GET = 'sponsored.r';
-    const SCOPE_LINKS_GET = 'links.r';
-    const SCOPE_LINKS_POST = 'links.rw';
-    const SCOPE_LINKS_ALL = 'links.drw';
+    public const SCOPE_USAGE_GET = 'usage.r';
+    public const SCOPE_ACCOUNT_GET = 'account.r';
+    public const SCOPE_GETALLLINKS_GET = 'getAllLinks.r';
+    public const SCOPE_CREDENTIALS_GET = 'credentials.r';
+    public const SCOPE_SPONSORCODE_GET = 'sponsorCode.r';
+    public const SCOPE_ACTIVATE_POST = 'activate.w';
+    public const SCOPE_SPONSORED_GET = 'sponsored.r';
+    public const SCOPE_LINKS_GET = 'links.r';
+    public const SCOPE_LINKS_POST = 'links.rw';
+    public const SCOPE_LINKS_ALL = 'links.drw';
 
     public function __construct(
         CredentialsInterface $credentials,

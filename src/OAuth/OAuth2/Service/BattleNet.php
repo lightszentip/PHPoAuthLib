@@ -19,29 +19,36 @@ class BattleNet extends AbstractService
      *
      * @see https://dev.battle.net/docs
      */
-    const SCOPE_WOW_PROFILE = 'wow.profile';
-    const SCOPE_SC2_PROFILE = 'sc2.profile';
+    public const SCOPE_WOW_PROFILE = 'wow.profile';
+    public const SCOPE_SC2_PROFILE = 'sc2.profile';
 
     /** -----------------------------------------------------------------------
      * Defined API URIs.
      *
      * @see https://dev.battle.net/docs
      */
-    const API_URI_US = 'https://us.api.battle.net/';
-    const API_URI_EU = 'https://eu.api.battle.net/';
-    const API_URI_KR = 'https://kr.api.battle.net/';
-    const API_URI_TW = 'https://tw.api.battle.net/';
-    const API_URI_CN = 'https://api.battlenet.com.cn/';
-    const API_URI_SEA = 'https://sea.api.battle.net/';
+    public const API_URI_US = 'https://us.api.battle.net/';
+    public const API_URI_EU = 'https://eu.api.battle.net/';
+    public const API_URI_KR = 'https://kr.api.battle.net/';
+    public const API_URI_TW = 'https://tw.api.battle.net/';
+    public const API_URI_CN = 'https://api.battlenet.com.cn/';
+    public const API_URI_SEA = 'https://sea.api.battle.net/';
 
-    public function __construct(CredentialsInterface $credentials,
-                                 ClientInterface $httpClient,
-                                 TokenStorageInterface $storage,
-                                 $scopes = [],
-                                 ?UriInterface $baseApiUri = null)
+    public function __construct(
+        CredentialsInterface $credentials,
+        ClientInterface $httpClient,
+        TokenStorageInterface $storage,
+        $scopes = [],
+        ?UriInterface $baseApiUri = null
+    )
     {
-        parent::__construct($credentials, $httpClient, $storage,
-                             $scopes, $baseApiUri);
+        parent::__construct(
+            $credentials,
+            $httpClient,
+            $storage,
+            $scopes,
+            $baseApiUri
+        );
 
         if ($baseApiUri === null) {
             $this->baseApiUri = new Uri(self::API_URI_US);
@@ -55,7 +62,6 @@ class BattleNet extends AbstractService
      */
     private function GetOAuthBaseUri()
     {
-
         // i love china
         switch ($this->baseApiUri) {
             case self::API_URI_US:  return 'https://us.battle.net/oauth/';
@@ -103,11 +109,15 @@ class BattleNet extends AbstractService
             $err = $data['error'];
 
             throw new TokenResponseException(
-                                "Error in retrieving token: \"$err\"");
+                "Error in retrieving token: \"$err\""
+            );
         }
 
-        $token = new StdOAuth2Token($data['access_token'], null,
-                                     $data['expires_in']);
+        $token = new StdOAuth2Token(
+            $data['access_token'],
+            null,
+            $data['expires_in']
+        );
 
         unset($data['access_token'] , $data['expires_in']);
 

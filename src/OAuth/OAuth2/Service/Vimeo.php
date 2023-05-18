@@ -31,9 +31,9 @@ use OAuth\OAuth2\Token\StdOAuth2Token;
 class Vimeo extends AbstractService
 {
     // API version
-    const VERSION = '3.2';
+    public const VERSION = '3.2';
     // API Header Accept
-    const HEADER_ACCEPT = 'application/vnd.vimeo.*+json;version=3.2';
+    public const HEADER_ACCEPT = 'application/vnd.vimeo.*+json;version=3.2';
 
     /**
      * Scopes.
@@ -41,22 +41,22 @@ class Vimeo extends AbstractService
      * @see  https://developer.vimeo.com/api/authentication#scope
      */
     // View public videos
-    const SCOPE_PUBLIC = 'public';
+    public const SCOPE_PUBLIC = 'public';
     // View private videos
-    const SCOPE_PRIVATE = 'private';
+    public const SCOPE_PRIVATE = 'private';
     // View Vimeo On Demand purchase history
-    const SCOPE_PURCHASED = 'purchased';
+    public const SCOPE_PURCHASED = 'purchased';
     // Create new videos, groups, albums, etc.
-    const SCOPE_CREATE = 'create';
+    public const SCOPE_CREATE = 'create';
     // Edit videos, groups, albums, etc.
-    const SCOPE_EDIT = 'edit';
+    public const SCOPE_EDIT = 'edit';
     // Delete videos, groups, albums, etc.
-    const SCOPE_DELETE = 'delete';
+    public const SCOPE_DELETE = 'delete';
     // Interact with a video on behalf of a user, such as liking
     // a video or adding it to your watch later queue
-    const SCOPE_INTERACT = 'interact';
+    public const SCOPE_INTERACT = 'interact';
     // Upload a video
-    const SCOPE_UPLOAD = 'upload';
+    public const SCOPE_UPLOAD = 'upload';
 
     public function __construct(
         CredentialsInterface $credentials,

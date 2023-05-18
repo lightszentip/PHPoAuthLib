@@ -32,13 +32,13 @@ class Deezer extends AbstractService
      * Defined scopes
      * http://developers.deezer.com/api/permissions.
      */
-    const SCOPE_BASIC_ACCESS = 'basic_access';       // Access users basic information
-    const SCOPE_EMAIL = 'email';              // Get the user's email
-    const SCOPE_OFFLINE_ACCESS = 'offline_access';     // Access user data any time
-    const SCOPE_MANAGE_LIBRARY = 'manage_library';     // Manage users' library
-    const SCOPE_MANAGE_COMMUNITY = 'manage_community';   // Manage users' friends
-    const SCOPE_DELETE_LIBRARY = 'delete_library';     // Delete library items
-    const SCOPE_LISTENING_HISTORY = 'listening_history';  // Access the user's listening history
+    public const SCOPE_BASIC_ACCESS = 'basic_access';       // Access users basic information
+    public const SCOPE_EMAIL = 'email';              // Get the user's email
+    public const SCOPE_OFFLINE_ACCESS = 'offline_access';     // Access user data any time
+    public const SCOPE_MANAGE_LIBRARY = 'manage_library';     // Manage users' library
+    public const SCOPE_MANAGE_COMMUNITY = 'manage_community';   // Manage users' friends
+    public const SCOPE_DELETE_LIBRARY = 'delete_library';     // Delete library items
+    public const SCOPE_LISTENING_HISTORY = 'listening_history';  // Access the user's listening history
 
     public function __construct(
         CredentialsInterface $credentials,

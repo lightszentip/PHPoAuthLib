@@ -24,25 +24,25 @@ class Dailymotion extends AbstractService
      *
      * @var string
      */
-    const SCOPE_EMAIL = 'email';
-    const SCOPE_PROFILE = 'userinfo';
-    const SCOPE_VIDEOS = 'manage_videos';
-    const SCOPE_COMMENTS = 'manage_comments';
-    const SCOPE_PLAYLIST = 'manage_playlists';
-    const SCOPE_TILES = 'manage_tiles';
-    const SCOPE_SUBSCRIPTIONS = 'manage_subscriptions';
-    const SCOPE_FRIENDS = 'manage_friends';
-    const SCOPE_FAVORITES = 'manage_favorites';
-    const SCOPE_GROUPS = 'manage_groups';
+    public const SCOPE_EMAIL = 'email';
+    public const SCOPE_PROFILE = 'userinfo';
+    public const SCOPE_VIDEOS = 'manage_videos';
+    public const SCOPE_COMMENTS = 'manage_comments';
+    public const SCOPE_PLAYLIST = 'manage_playlists';
+    public const SCOPE_TILES = 'manage_tiles';
+    public const SCOPE_SUBSCRIPTIONS = 'manage_subscriptions';
+    public const SCOPE_FRIENDS = 'manage_friends';
+    public const SCOPE_FAVORITES = 'manage_favorites';
+    public const SCOPE_GROUPS = 'manage_groups';
 
     /**
      * Dialog form factors.
      *
      * @var string
      */
-    const DISPLAY_PAGE = 'page';
-    const DISPLAY_POPUP = 'popup';
-    const DISPLAY_MOBILE = 'mobile';
+    public const DISPLAY_PAGE = 'page';
+    public const DISPLAY_POPUP = 'popup';
+    public const DISPLAY_MOBILE = 'mobile';
 
     /**
      * {@inheritdoc}

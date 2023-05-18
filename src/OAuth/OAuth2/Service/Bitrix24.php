@@ -8,16 +8,16 @@ use OAuth\OAuth2\Token\StdOAuth2Token;
 
 class Bitrix24 extends AbstractService
 {
-    const SCOPE_DEPARTMENT = 'department';
-    const SCOPE_CRM = 'crm';
-    const SCOPE_CALENDAR = 'calendar';
-    const SCOPE_USER = 'user';
-    const SCOPE_ENTITY = 'entity';
-    const SCOPE_TASK = 'task';
-    const SCOPE_TASKS_EXTENDED = 'tasks_extended';
-    const SCOPE_IM = 'im';
-    const SCOPE_LOG = 'log';
-    const SCOPE_SONET_GROUP = 'sonet_group';
+    public const SCOPE_DEPARTMENT = 'department';
+    public const SCOPE_CRM = 'crm';
+    public const SCOPE_CALENDAR = 'calendar';
+    public const SCOPE_USER = 'user';
+    public const SCOPE_ENTITY = 'entity';
+    public const SCOPE_TASK = 'task';
+    public const SCOPE_TASKS_EXTENDED = 'tasks_extended';
+    public const SCOPE_IM = 'im';
+    public const SCOPE_LOG = 'log';
+    public const SCOPE_SONET_GROUP = 'sonet_group';
 
     /**
      * {@inheritdoc}

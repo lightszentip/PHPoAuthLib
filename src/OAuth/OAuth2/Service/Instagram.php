@@ -17,12 +17,12 @@ class Instagram extends AbstractService
      *
      * @see http://instagram.com/developer/authentication/#scope
      */
-    const SCOPE_BASIC = 'basic';
-    const SCOPE_PUBLIC_CONTENT = 'public_content';
-    const SCOPE_COMMENTS = 'comments';
-    const SCOPE_RELATIONSHIPS = 'relationships';
-    const SCOPE_LIKES = 'likes';
-    const SCOPE_FOLLOWER_LIST = 'follower_list';
+    public const SCOPE_BASIC = 'basic';
+    public const SCOPE_PUBLIC_CONTENT = 'public_content';
+    public const SCOPE_COMMENTS = 'comments';
+    public const SCOPE_RELATIONSHIPS = 'relationships';
+    public const SCOPE_LIKES = 'likes';
+    public const SCOPE_FOLLOWER_LIST = 'follower_list';
 
     public function __construct(
         CredentialsInterface $credentials,

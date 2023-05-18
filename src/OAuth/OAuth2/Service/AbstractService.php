@@ -17,7 +17,7 @@ use ReflectionClass;
 abstract class AbstractService extends BaseAbstractService implements ServiceInterface
 {
     /** @const OAUTH_VERSION */
-    const OAUTH_VERSION = 2;
+    public const OAUTH_VERSION = 2;
 
     /** @var array */
     protected $scopes;
@@ -50,7 +50,7 @@ abstract class AbstractService extends BaseAbstractService implements ServiceInt
 
         foreach ($scopes as $scope) {
             if (!$this->isValidScope($scope)) {
-                throw new InvalidScopeException('Scope ' . $scope . ' is not valid for service ' . get_class($this));
+                throw new InvalidScopeException('Scope ' . $scope . ' is not valid for service ' . static::class);
             }
         }
 
@@ -172,6 +172,7 @@ abstract class AbstractService extends BaseAbstractService implements ServiceInt
         }
 
         $extraHeaders = array_merge($this->getExtraApiHeaders(), $extraHeaders);
+
         return $this->httpClient->retrieveResponse($uri, $body, $extraHeaders, $method);
     }
 
@@ -226,7 +227,7 @@ abstract class AbstractService extends BaseAbstractService implements ServiceInt
      */
     public function isValidScope($scope)
     {
-        $reflectionClass = new ReflectionClass(get_class($this));
+        $reflectionClass = new ReflectionClass(static::class);
 
         return in_array($scope, $reflectionClass->getConstants(), true);
     }
@@ -305,8 +306,6 @@ abstract class AbstractService extends BaseAbstractService implements ServiceInt
 
     /**
      * Parses the access token response and returns a TokenInterface.
-     *
-     * @abstract
      *
      * @param string $responseBody
      *
